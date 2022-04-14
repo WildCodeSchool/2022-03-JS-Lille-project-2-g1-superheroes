@@ -1,11 +1,9 @@
-
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import Carousel from "./components/Carousel";
 import Footer from "./components/Footer/Footer";
 import LegalNotice from "./components/LegalNotice/LegalNotice";
 import Contact from "./components/Contact/Contact";
-import Home from "@pages/Home";
-import Carousel from "@components/Carousel";
 
 function App() {
   return (

@@ -1,4 +1,5 @@
 import SLegalNotice from "./style";
+
 function LegalNotice() {
   return (
     <SLegalNotice>
