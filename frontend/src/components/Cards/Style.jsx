@@ -88,13 +88,15 @@ export default styled.section`
       border: 1.5mm ridge #b6a87a;
       background: rgba(255, 255, 255, 0.5);
       color: #000000;
-      width: 10vw;
+      width: 49%;
       margin: 0.3rem auto;
+      text-align: center;
     }
     h2 {
       font-family: Georgia, "Times New Roman", Times, serif;
       font-size: 21px;
       background: rgb(0, 0, 0);
+      background: rgba(255, 255, 255, 0.5);
       background: linear-gradient(
         90deg,
         rgba(0, 0, 0, 1) 0%,
@@ -103,8 +105,8 @@ export default styled.section`
       );
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
       color: #000000;
-      width: 4.5vw;
-      height: 3vh;
+      width: 19%;
+      height: 4vh;
       margin-left: 0.3rem;
       display: flex;
       justify-content: center;
@@ -115,6 +117,7 @@ export default styled.section`
       background: rgba(255, 255, 255, 0.5);
       outline: 2mm ridge #bc8f8f;
       display: flex;
+      text-align: center;
       flex-direction: column;
       width: 80%;
       color: #000000;
