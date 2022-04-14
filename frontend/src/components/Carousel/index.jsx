@@ -1,12 +1,17 @@
 import SCarousel from "./style";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CarouselData from "@components/CarouselData";
 import axios from "axios";
+
 export default function Carousel() {
   const [images, setImages] = useState(CarouselData);
   const [position, setPosition] = useState(0);
-  axios.get().then(({}) => {});
 
+  useEffect(() => {
+    axios.get("http://localhost:5000/heroes").then(({ data }) => {
+      setImages(data);
+    });
+  }, []);
   const prevSlide = () => {
     // déterminez si position est égal à 0 et si l'utilisateur a atteint le début du carrousel.
     const resetToVeryBack = position === 0;
@@ -41,7 +46,7 @@ export default function Carousel() {
       <div className="carousel-container">
         <button onClick={prevSlide}>‹</button>
         {imageSourcesToDisplay.map((image) => {
-          return <img src={image.img} />;
+          return <img src={image.images.lg} />;
         })}
         <button onClick={nextSlide}>›</button>
       </div>
