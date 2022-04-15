@@ -1,4 +1,3 @@
-
 import Card from "@components/Cards/Card";
 // import Home from "@pages/Home";
 
@@ -12,7 +11,6 @@ import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <div className="App">
-
       {/* <Home /> */}
       <Card />
 
@@ -20,8 +18,8 @@ function App() {
         <Route path="/legalnotice" element={<LegalNotice />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
       <Carousel />
+      <Footer />
     </div>
   );
 }
