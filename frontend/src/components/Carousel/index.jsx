@@ -32,13 +32,13 @@ export default function Carousel() {
     setPosition(index);
   };
 
-  // créer un nouveau tableau avec 5 éléments à partir des images sources
+  // créer un nouveau tableau avec 4 éléments à partir des images sources
   const activeImages = images.slice(position, position + 4);
 
-  // vérifier la longueur du nouveau tableau (elle est inférieure à 5 lorsque l'index est à la fin du tableau des sources d'images)
+  // vérifier la longueur du nouveau tableau (elle est inférieure à 4 lorsque l'index est à la fin du tableau des sources d'images)
   const imageSourcesToDisplay =
     activeImages.length < 4
-      ? // si la longueur de imageSourcesToDisplay est inférieure à 5 images, ajoutez les images manquantes depuis le début du tableau original.
+      ? // si la longueur de imageSourcesToDisplay est inférieure à 4 images, ajoutez les images manquantes depuis le début du tableau original.
         [...activeImages, ...images.slice(0, 4 - activeImages.length)]
       : activeImages;
   return (
