@@ -1,7 +1,7 @@
-import SCarousel from "./style";
 import { useEffect, useState } from "react";
 import CarouselData from "@components/CarouselData";
 import axios from "axios";
+import SCarousel from "./style";
 
 export default function Carousel() {
   const [images, setImages] = useState(CarouselData);
