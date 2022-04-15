@@ -13,7 +13,7 @@ export default function Carousel() {
     });
   }, []);
   const prevSlide = () => {
-    // déterminez si position est égal à 0 et si l'utilisateur a atteint le début du carrousel.
+    // déterminer si position est égal à 0 et si l'utilisateur a atteint le début du carrousel.
     const resetToVeryBack = position === 0;
 
     const index = resetToVeryBack ? images.length - 1 : position - 1;
