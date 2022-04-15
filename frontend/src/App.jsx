@@ -1,5 +1,5 @@
+import HomePageHeader from "@components/HomePage/HomePageHeader";
 import Card from "@components/Cards/Card";
-
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Carousel from "./components/Carousel";
@@ -10,8 +10,8 @@ import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <div className="App">
+      <HomePageHeader />
       <Card />
-
       <Routes>
         <Route path="/legalnotice" element={<LegalNotice />} />
         <Route path="/contact" element={<Contact />} />
