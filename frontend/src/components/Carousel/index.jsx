@@ -44,11 +44,15 @@ export default function Carousel() {
   return (
     <SCarousel>
       <div className="carousel-container">
-        <button onClick={prevSlide}>‹</button>
+        <button type="button" onClick={prevSlide}>
+          ‹
+        </button>
         {imageSourcesToDisplay.map((image) => {
-          return <img src={image.images.lg} />;
+          return <img src={image.images.lg} alt="" />;
         })}
-        <button onClick={nextSlide}>›</button>
+        <button type="button" onClick={nextSlide}>
+          ›
+        </button>
       </div>
     </SCarousel>
   );
