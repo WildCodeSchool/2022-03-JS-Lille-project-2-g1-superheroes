@@ -8,8 +8,14 @@ export default styled.header`
   img {
     margin-top: 2vh;
     margin-right: 2vw;
-    width: 17%;
-    height: 60vh;
+    width: 15%;
+    height: 56vh;
     object-fit: cover;
+    filter: grayscale(80%);
+  }
+  img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    filter: none;
   }
 `;
