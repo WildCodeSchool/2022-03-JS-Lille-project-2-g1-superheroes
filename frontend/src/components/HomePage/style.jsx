@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import VS from "../../assets/homepage/VS.jpg";
-import HEROS from "../../assets/homepage/herosoftheday.jpg";
+import versus from "../../assets/homepage/VS.jpg";
+import heros from "../../assets/homepage/herosoftheday.jpg";
 
 export default styled.main`
   margin-top: 5vh;
@@ -20,14 +20,14 @@ export default styled.main`
     -webkit-text-stroke: 1.2px black;
   }
   .VS {
-    background-image: url(${VS});
+    background-image: url(${versus});
     background-size: cover;
     background-repeat: no-repeat;
     border: 8px solid #afffea;
     cursor: pointer;
   }
   .heros {
-    background-image: url(${HEROS});
+    background-image: url(${heros});
     background-size: cover;
     background-repeat: no-repeat;
     border: 8px solid #807be4;
