@@ -1,6 +1,7 @@
-import VS from "../../../src/assets/homepage/VS.jpg";
-import HEROS from "../../../src/assets/homepage/herosoftheday.jpg";
 import styled from "styled-components";
+import VS from "../../assets/homepage/VS.jpg";
+import HEROS from "../../assets/homepage/herosoftheday.jpg";
+
 export default styled.main`
   margin-top: 5vh;
   margin-bottom: 5vh;
