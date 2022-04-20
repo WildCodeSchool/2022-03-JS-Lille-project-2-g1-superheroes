@@ -57,15 +57,4 @@ export default styled.section`
       text-align: center;
     }
   }
-  .repop {
-    transform: translateY(-150%);
-    background-color: black;
-    height: 45vh;
-    width: 20vw;
-    transition: 0.2s ease-in;
-    margin-left: 40%;
-  }
-  .repopActiv {
-    transform: translateY(30%);
-  }
 `;
