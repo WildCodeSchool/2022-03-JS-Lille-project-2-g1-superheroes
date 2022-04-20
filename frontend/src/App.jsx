@@ -1,4 +1,5 @@
 import Card from "@components/Cards/Card";
+import Logo from "@components/Logo";
 
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Card />
+      <Logo />
 
       <Routes>
         <Route path="/legalnotice" element={<LegalNotice />} />
