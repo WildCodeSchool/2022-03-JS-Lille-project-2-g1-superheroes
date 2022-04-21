@@ -8,7 +8,6 @@ export default styled.main`
   display: flex;
   justify-content: space-around;
   article {
-    border: 2px dotted red;
     width: 400px;
     height: 200px;
     display: flex;
