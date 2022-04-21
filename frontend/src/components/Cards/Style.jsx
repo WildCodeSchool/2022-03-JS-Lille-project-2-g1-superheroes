@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.section`
   .card {
-    background-image: url("https://www.superherodb.com/pictures2/portraits/10/100/10831.jpg");
+    background-image: url(${(props) => props.src || null});
     background-position: center;
     background-size: cover;
     width: 30vh;
