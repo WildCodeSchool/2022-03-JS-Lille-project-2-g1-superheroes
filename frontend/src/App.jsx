@@ -20,7 +20,6 @@ function App() {
         <Route path="/manga" element={<Manga />} />
         <Route path="/dccomics" element={<Dccomics />} />
         <Route path="/autresheros" element={<Autresheros />} />
-
         <Route path="/legalnotice" element={<LegalNotice />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
