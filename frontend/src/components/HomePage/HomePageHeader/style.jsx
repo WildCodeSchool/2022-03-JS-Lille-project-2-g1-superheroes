@@ -6,13 +6,14 @@ import dccomics from "../../../assets/headerhomepage/dccomics.jpg";
 import autres from "../../../assets/headerhomepage/autres.jpg";
 
 export default styled.nav`
+  padding-top: 2rem;
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
+
     li {
       background-size: cover;
       background-repeat: no-repeat;
@@ -20,10 +21,9 @@ export default styled.nav`
       border: solid 2px black;
       width: 18vw;
       height: 70vh;
-      filter: grayscale(80%);
     }
     li:hover {
-      filter: grayscale(0);
+      filter: sepia(80%);
     }
   }
   .marvel {

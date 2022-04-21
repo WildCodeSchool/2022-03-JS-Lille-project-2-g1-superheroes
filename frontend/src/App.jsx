@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
-import "./App.css";
+import SGlobal from "./style";
 import Footer from "./components/Footer/Footer";
 import LegalNotice from "./components/LegalNotice/LegalNotice";
 import Contact from "./components/Contact/Contact";
@@ -12,7 +12,7 @@ import Autresheros from "./components/Autresheros";
 
 function App() {
   return (
-    <div className="App">
+    <SGlobal className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/marvel" element={<Marvel />} />
@@ -25,7 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </div>
+    </SGlobal>
   );
 }
 
