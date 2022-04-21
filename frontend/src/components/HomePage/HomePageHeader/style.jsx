@@ -6,12 +6,12 @@ export default styled.header`
   justify-content: space-evenly;
   width: 100vw;
   height: 60vh;
-  img {
+  a img {
     width: 17%;
     object-fit: cover;
     filter: grayscale(80%);
   }
-  img:hover {
+  a img:hover {
     cursor: pointer;
     filter: none;
   }
