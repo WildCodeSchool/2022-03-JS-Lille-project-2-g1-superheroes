@@ -21,8 +21,7 @@ export default function HomePageHeader() {
           <Link to="/autresheros">
             <li className="autresheros"> </li>
           </Link>
-        </ul>
-        {/*  */}
+        </ul>        
       </nav>
     </SHomePageHeader>
   );
