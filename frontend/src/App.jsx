@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Card from "./components/Cards";
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import SGlobal from "./style";
@@ -24,13 +23,6 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <div className="storageCard">
-        {heroes.map((hero) => {
-          return <Card {...hero} />;
-        })}
-      </div>
-      <HomePage />
     <SGlobal className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
