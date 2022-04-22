@@ -1,4 +1,3 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 
 const MODAL_STYLES = {
@@ -26,8 +25,6 @@ function Modal({ open, onClose, children }) {
     return null;
   }
 
-  const [titles, setTitles] = useState([]);
-
   return (
     <>
       <div style={OVERLAY_STYLES} />
@@ -36,17 +33,15 @@ function Modal({ open, onClose, children }) {
           Close Modal
         </button>
         {children}
-        <div className="app">
-          {titles.map((title) => {})}
-        </div>
+        <div className="app">{}</div>
       </div>
     </>
   );
 }
 Modal.propTypes = {
-  open: PropTypes.string.isBoolean,
-  onClose: PropTypes.string.isFunction,
-  children: PropTypes.string.isString
+  open: PropTypes.bool.isRequired,
+  onClose: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
 };
 
 export default Modal;
