@@ -1,6 +1,3 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
-import Card from "./components/Cards";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import SGlobal from "./style";
@@ -14,14 +11,6 @@ import Dccomics from "./components/Dccomics";
 import Autresheros from "./components/Autresheros";
 
 function App() {
-  const [heroes, setHeroes] = useState([]);
-
-  useEffect(() => {
-    axios.get("http://localhost:5000/heroes").then(({ data }) => {
-      setHeroes(data.filter((d, idx) => idx < 50));
-    });
-  }, []);
-
   return (
     <SGlobal className="App">
       <Routes>

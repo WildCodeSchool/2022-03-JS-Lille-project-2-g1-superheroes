@@ -18,11 +18,14 @@ export default styled.main`
     font-weight: bold;
     -webkit-text-stroke: 1.2px black;
   }
+  .jarvis {
+    display: none;
+  }
   .VS {
     background-image: url(${versus});
     background-size: cover;
     background-repeat: no-repeat;
-    border: 8px solid #afffea;
+    border: 8px solid #509d81;
     cursor: pointer;
   }
   .heros {
@@ -31,5 +34,25 @@ export default styled.main`
     background-repeat: no-repeat;
     border: 8px solid #807be4;
     cursor: pointer;
+  }
+  @media screen and (max-width: 768px) {
+    article {
+      margin: 0;
+      padding: 0;
+      width: 30%;
+      height: 10vh;
+      font-size: 24px;
+      color: white;
+      text-align: center;
+    }
+    .VS {
+      background-position: center;
+    }
+    .heros {
+      background-position: center;
+    }
+    .jarvis {
+      display: initial;
+    }
   }
 `;
