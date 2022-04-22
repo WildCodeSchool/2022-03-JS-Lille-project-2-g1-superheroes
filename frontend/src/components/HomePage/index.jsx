@@ -8,6 +8,7 @@ export default function HomePage() {
       <SHomePage>
         <article className="VS" />
         <article className="heros">Heros du jour</article>
+        <article className="jarvis">JARVIS</article>
       </SHomePage>
     </main>
   );

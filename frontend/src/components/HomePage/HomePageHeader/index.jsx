@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import logomarvel from "../../../assets/logo/logomarvel.png";
+import logosw from "../../../assets/logo/logosw.png";
+import logodc from "../../../assets/logo/logodc.png";
 import SHomePageHeader from "./style";
 
 export default function HomePageHeader() {
@@ -7,21 +10,31 @@ export default function HomePageHeader() {
       <nav className="imgLink">
         <ul>
           <Link to="/marvel">
-            <li className="marvel"> </li>
+            <li className="marvel">
+              <img src={logomarvel} alt="logomarvel" />
+            </li>
           </Link>
           <Link to="/starwars">
-            <li className="starwars"> </li>
+            <li className="starwars">
+              <img src={logosw} alt="logosw" />
+            </li>
           </Link>
           <Link to="/manga">
-            <li className="manga"> </li>
+            <li className="manga">
+              <span>Animé</span>
+            </li>
           </Link>
           <Link to="/dccomics">
-            <li className="dccomics"> </li>
+            <li className="dccomics">
+              <img src={logodc} alt="logodc" />
+            </li>
           </Link>
           <Link to="/autresheros">
-            <li className="autresheros"> </li>
+            <li className="autresheros">
+              <span>Autres Héros</span>
+            </li>
           </Link>
-        </ul>        
+        </ul>
       </nav>
     </SHomePageHeader>
   );
