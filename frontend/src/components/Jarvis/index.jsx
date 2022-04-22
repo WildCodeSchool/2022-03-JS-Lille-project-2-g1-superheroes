@@ -33,7 +33,7 @@ export default function Jarvis() {
     <SJarvis>
       {popCard?.name && (
         <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-          {popCard.name} 
+          {popCard.name}
         </Modal>
       )}
       <div className="block">
