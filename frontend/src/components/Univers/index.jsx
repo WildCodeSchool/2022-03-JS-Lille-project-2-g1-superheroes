@@ -1,6 +1,7 @@
+import { useParams } from "react-router-dom";
+import Carousel from "../Carousel";
 import SUniver from "./style";
 import data from "../UniversData/index";
-import { useParams } from "react-router-dom";
 
 export default function Univers() {
   const { univers } = useParams();
@@ -16,9 +17,9 @@ export default function Univers() {
         </div>
       </header>
 
-      <section className="carousel_container">CAROUSEL COMPONENT</section>
-      <section className="filtre_container">FILTRE</section>
-      <section className="card_container"> CARD</section>
+      <section className="carousel_container">
+        <Carousel />
+      </section>
     </SUniver>
   );
 }

@@ -27,6 +27,7 @@ const data = {
         consequat elit diam, quis fringilla diam eleifend ut. Duis eget augue in
         justo facilisis scelerisque in id lacus. Vivamus vulputate dui sed eros
         sollicitudin finibus sit amet quis libero.`,
+    bg: "#ef41239d",
   },
   starwars: {
     categ: "lucas",
@@ -45,6 +46,7 @@ const data = {
         consequat elit diam, quis fringilla diam eleifend ut. Duis eget augue in
         justo facilisis scelerisque in id lacus. Vivamus vulputate dui sed eros
         sollicitudin finibus sit amet quis libero.`,
+    bg: "#ffeb3c86",
   },
   manga: {
     categ: "Shueisha",
@@ -63,6 +65,7 @@ const data = {
         consequat elit diam, quis fringilla diam eleifend ut. Duis eget augue in
         justo facilisis scelerisque in id lacus. Vivamus vulputate dui sed eros
         sollicitudin finibus sit amet quis libero.`,
+    bg: "#faa22f8f",
   },
   dccomics: {
     categ: "dc",
@@ -81,6 +84,7 @@ const data = {
         consequat elit diam, quis fringilla diam eleifend ut. Duis eget augue in
         justo facilisis scelerisque in id lacus. Vivamus vulputate dui sed eros
         sollicitudin finibus sit amet quis libero.`,
+    bg: "#0175f288",
   },
   autres: {
     categ: "autres",
@@ -99,6 +103,7 @@ const data = {
         consequat elit diam, quis fringilla diam eleifend ut. Duis eget augue in
         justo facilisis scelerisque in id lacus. Vivamus vulputate dui sed eros
         sollicitudin finibus sit amet quis libero.`,
+    bg: "#ac007a99",
   },
 };
 

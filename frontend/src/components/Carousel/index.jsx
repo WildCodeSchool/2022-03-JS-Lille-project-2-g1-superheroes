@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import CarouselData from "@components/CarouselData";
 import axios from "axios";
+import data from "@components/UniversData";
 import SCarousel from "./style";
+import { useParams } from "react-router-dom";
 
 export default function Carousel() {
   const [images, setImages] = useState(CarouselData);
   const [position, setPosition] = useState(0);
+  const { univers } = useParams();
 
   useEffect(() => {
     axios.get("http://localhost:5000/heroes").then(({ data }) => {
@@ -42,7 +45,7 @@ export default function Carousel() {
         [...activeImages, ...images.slice(0, 4 - activeImages.length)]
       : activeImages;
   return (
-    <SCarousel>
+    <SCarousel bg={data[univers].bg}>
       <div className="carousel-container">
         <button type="button" onClick={prevSlide}>
           ‹

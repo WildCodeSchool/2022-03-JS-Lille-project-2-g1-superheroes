@@ -2,19 +2,15 @@ import styled from "styled-components";
 
 export default styled.section`
   /* Aspect du carousel */
-  background-color: #000000;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  background-color: ${(props) => props.bg};
 
   .carousel-container {
     display: flex;
     justify-content: space-around;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     img {
-      width: 20%;
-    }
-    img:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 5px 5px #fff;
+      width: 15%;
     }
   }
 
@@ -23,6 +19,6 @@ export default styled.section`
     font-size: 5em;
     cursor: pointer;
     color: white;
-    background-color: #000000;
+    background-color: transparent;
   }
 `;
