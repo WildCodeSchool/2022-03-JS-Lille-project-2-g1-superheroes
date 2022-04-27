@@ -1,12 +1,11 @@
-import { useEffect, useState } from "react";
-import CarouselData from "@components/CarouselData";
-import axios from "axios";
-import data from "@components/UniversData";
-import SCarousel from "./style";
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import dataUnivers from "@components/UniversData";
+import SCarousel from "./style";
 
 export default function Carousel() {
-  const [images, setImages] = useState(CarouselData);
+  const [images, setImages] = useState([]);
   const [position, setPosition] = useState(0);
   const { univers } = useParams();
 
@@ -44,15 +43,21 @@ export default function Carousel() {
       ? // si la longueur de imageSourcesToDisplay est inférieure à 4 images, ajoutez les images manquantes depuis le début du tableau original.
         [...activeImages, ...images.slice(0, 4 - activeImages.length)]
       : activeImages;
+
   return (
-    <SCarousel bg={data[univers].bg}>
+    <SCarousel bg={dataUnivers[univers].bg}>
       <div className="carousel-container">
         <button type="button" onClick={prevSlide}>
           ‹
         </button>
-        {imageSourcesToDisplay.map((image) => {
-          return <img src={image.images.lg} alt="" />;
-        })}
+        {imageSourcesToDisplay
+          .filter(({ biography }) => {
+            const { publisher } = biography;
+            return publisher === dataUnivers[univers].categ;
+          })
+          .map((image) => {
+            return <img src={image.images.lg} alt="" />;
+          })}
         <button type="button" onClick={nextSlide}>
           ›
         </button>

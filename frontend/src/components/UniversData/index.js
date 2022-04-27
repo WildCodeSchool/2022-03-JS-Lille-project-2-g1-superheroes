@@ -7,11 +7,11 @@ import imganimes from "../../assets/headerhomepage/manga.jpg";
 import logodc from "../../assets/logo/logodc.png";
 import imgdc from "../../assets/headerhomepage/dc2.jpg";
 import logoautres from "../../assets/logo/logoautres.png";
-import imgautres from "../../assets/headerhomepage/autres.jpg";
+import imgautres from "../../assets/headerhomepage/dessinAnime.jpg";
 
-const data = {
+const dataUnivers = {
   marvel: {
-    categ: "marvel",
+    categ: "Marvel Comics",
     logo: logomarvel,
     image: imgmarvel,
     details: `Nullam bibendum dictum tellus, in iaculis diam gravida non. Vivamus
@@ -30,7 +30,7 @@ const data = {
     bg: "#ef41239d",
   },
   starwars: {
-    categ: "lucas",
+    categ: "George Lucas",
     logo: logostarwars,
     image: imgstarwars,
     details: `Nullam bibendum dictum tellus, in iaculis diam gravida non. Vivamus
@@ -68,7 +68,7 @@ const data = {
     bg: "#faa22f8f",
   },
   dccomics: {
-    categ: "dc",
+    categ: "DC Comics",
     logo: logodc,
     image: imgdc,
     details: `Nullam bibendum dictum tellus, in iaculis diam gravida non. Vivamus
@@ -107,4 +107,4 @@ const data = {
   },
 };
 
-export default data;
+export default dataUnivers;
