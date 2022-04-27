@@ -8,7 +8,7 @@ function Modal({ open, onClose, children }) {
 
   return (
     <SJarvis>
-              <div className="overlay" />
+       <div className="overlay" />
         <div className="modal">
           {children}
           <div className="app"></div>
