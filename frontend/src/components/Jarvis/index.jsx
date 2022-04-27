@@ -6,7 +6,6 @@ import { useState } from "react";
 import axios from "axios";
 import SJarvis from "./style";
 import Modal from "./Modal";
-import Cards from "@components/Cards"
 
 export default function Jarvis() {
   const [active, setActive] = useState("jarvisNav");
@@ -33,14 +32,13 @@ export default function Jarvis() {
   return (
     <SJarvis>
       {popCard?.name && (
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-          {<Cards {...popCard}/>}
-        </Modal>
+        <Modal open={isOpen} onClose={() => setIsOpen(false)} />
       )}
       <div className="block">
         <img src={imgJarvis1} alt="jarvis1" className="img1" />
         <button
           type="button"
+          onFocus=""
           onMouseOver={() => toggleJarvis(false)}
           onClick={() => {
             setIsOpen(true);

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import SJarvis from "./style"
+import SJarvis from "./style";
 
 function Modal({ open, onClose, children }) {
   if (!open) {
@@ -12,12 +12,12 @@ function Modal({ open, onClose, children }) {
         <div className="overlay" />
         <div className="modal">
           {children}
-        <div className="app">{}</div>
-        <div className="border_button">
-          <button onClick={onClose} type="button">
+          <div className="app">{}</div>
+          <div className="border_button">
+            <button onClick={onClose} type="button">
               Close card
-          </button>
-        </div>
+            </button>
+          </div>
         </div>
       </>
     </SJarvis>
