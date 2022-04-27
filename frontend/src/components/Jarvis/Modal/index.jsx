@@ -18,7 +18,7 @@ function Modal({ open, onClose, children }) {
             </button>
           </div>
         </div>
-          </SJarvis>
+    </SJarvis>
   );
 }
 Modal.propTypes = {
