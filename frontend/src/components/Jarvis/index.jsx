@@ -21,8 +21,7 @@ export default function Jarvis() {
 
   const search = () => {
     axios.get(`http://localhost:5000/heroes`).then(({ data }) => {
-      // insert your filter here <3
-      const myHeros = data.filter((hero) => {
+            const myHeros = data.filter((hero) => {
         return hero.name.includes(filterValue);
       });
       setPopCard(myHeros[0]);
