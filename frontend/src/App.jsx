@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "@components/HomePage";
 import SGlobal from "./style";
-import LegalNotice from "./components/LegalNotice/LegalNotice";
+import LegalNotice from "./components/LegalNotice";
 import Univers from "./components/Univers";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
