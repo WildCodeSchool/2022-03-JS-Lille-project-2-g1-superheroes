@@ -47,7 +47,9 @@ export default function Carousel() {
         {images
           .filter((toto, idx) => idx >= position && idx < position + 4)
           .map((image) => {
-            return <img src={image.images.lg} alt="carousel" />;
+            return (
+              <img key={image.images.lg} src={image.images.lg} alt="carousel" />
+            );
           })}
         <button type="button" onClick={nextSlide}>
           &rsaquo;

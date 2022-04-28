@@ -53,7 +53,7 @@ export default function Univers() {
               );
             })
             .map((hero) => {
-              return <Card data={hero} />;
+              return <Card key={hero.id} data={hero} />;
             })}
         </section>
       </div>
