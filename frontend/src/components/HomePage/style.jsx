@@ -7,6 +7,7 @@ export default styled.main`
   margin-bottom: 5vh;
   display: flex;
   justify-content: space-around;
+  margin-left: 13.7vw;
   article {
     width: 400px;
     height: 200px;
