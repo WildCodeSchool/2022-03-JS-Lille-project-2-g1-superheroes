@@ -17,4 +17,8 @@ export default styled.div`
     padding: 1rem;
     color: white;
   }
+  @media screen and (max-width: 768px) {
+    .containerFooter {
+    }
+  }
 `;
