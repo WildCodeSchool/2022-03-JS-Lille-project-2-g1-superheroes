@@ -26,7 +26,7 @@ export default styled.nav`
       background-position: center;
       border: solid 2px black;
       width: 18vw;
-      height: 70vh;
+      height: 59vh;
       filter: none;
     }
     li:hover {
