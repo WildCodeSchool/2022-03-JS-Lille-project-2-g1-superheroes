@@ -9,6 +9,7 @@ import dataUnivers from "../UniversData/index";
 export default function Univers() {
   const { univers } = useParams();
   const [heroes, setHeroes] = useState([]);
+
   useEffect(() => {
     axios.get("http://localhost:5000/heroes").then(({ data }) => {
       setHeroes(data);
@@ -21,6 +22,7 @@ export default function Univers() {
         <div>
           <img className="logo" src={dataUnivers[univers].logo} alt={univers} />
           <p className="details">{dataUnivers[univers].details}</p>
+          <section className="filtreMobile">FILTRE</section>
         </div>
         <img className="image" src={dataUnivers[univers].image} alt={univers} />
       </div>

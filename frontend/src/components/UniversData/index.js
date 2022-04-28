@@ -87,7 +87,7 @@ const dataUnivers = {
     bg: "#0175f288",
   },
   autres: {
-    categ: "autres",
+    categ: "autre",
     logo: logoautres,
     image: imgautres,
     details: `Nullam bibendum dictum tellus, in iaculis diam gravida non. Vivamus
