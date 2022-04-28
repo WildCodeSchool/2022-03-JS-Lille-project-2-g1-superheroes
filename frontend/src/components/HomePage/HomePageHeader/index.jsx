@@ -8,6 +8,7 @@ import Logo from "../../Logo";
 export default function HomePageHeader() {
   return (
     <SHomePageHeader>
+      <Logo />
       <nav className="imgLink">
         <ul>
           <Link to="/marvel">
@@ -37,7 +38,6 @@ export default function HomePageHeader() {
           </Link>
         </ul>
       </nav>
-      <Logo />
     </SHomePageHeader>
   );
 }

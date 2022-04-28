@@ -37,12 +37,14 @@ export default styled.main`
     cursor: pointer;
   }
   @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+    margin: 0;
     article {
       margin: 0;
       padding: 0;
       width: 30%;
       height: 10vh;
-      font-size: 24px;
+      font-size: 16px;
       color: white;
       text-align: center;
     }
