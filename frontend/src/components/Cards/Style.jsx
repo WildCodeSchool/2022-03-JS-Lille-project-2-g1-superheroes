@@ -80,7 +80,7 @@ export default styled.section`
     }
     .numbers li {
       font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 12px;
+      font-size: 14px;
       list-style-type: none;
       padding: 0;
       line-height: 1.7rem;
@@ -106,7 +106,7 @@ export default styled.section`
       height: 3rem;
       margin: 0.3rem auto;
       text-align: center;
-      right: 2rem;
+      margin-right: 2.5rem;
     }
     h2 {
       font-family: Georgia, "Times New Roman", Times, serif;
@@ -120,7 +120,7 @@ export default styled.section`
         rgba(13, 25, 201, 1) 100%
       );
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-      color: #000000;
+      color: #ffff;
       width: 19%;
       height: 4vh;
       display: flex;
@@ -146,6 +146,19 @@ export default styled.section`
     }
     .identity p {
       margin-top: 0.7rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      h2 {
+        margin-right: 11.8rem;
+        position: absolute;
+      }
+      h1 {
+        margin-right: 1rem;
+      }
+      .pointPower {
+        margin-bottom: 0.4rem;
+      }
     }
   }
 `;
