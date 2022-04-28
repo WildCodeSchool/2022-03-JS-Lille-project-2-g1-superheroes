@@ -40,7 +40,7 @@ export default function Carousel() {
   };
   return (
     <SCarousel bg={dataUnivers[univers].bg}>
-      <div className="carousel-container">
+      <div className="carouselContainer">
         <button type="button" onClick={prevSlide}>
           &lsaquo;
         </button>

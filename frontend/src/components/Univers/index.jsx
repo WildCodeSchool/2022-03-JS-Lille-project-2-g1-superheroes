@@ -18,7 +18,7 @@ export default function Univers() {
 
   return (
     <SUniver bg={dataUnivers[univers].bg}>
-      <div className="header_container">
+      <div className="headerContainer">
         <div>
           <img className="logo" src={dataUnivers[univers].logo} alt={univers} />
           <p className="details">{dataUnivers[univers].details}</p>
@@ -27,10 +27,10 @@ export default function Univers() {
         <img className="image" src={dataUnivers[univers].image} alt={univers} />
       </div>
 
-      <section className="carousel_container">
+      <section className="carouselContainer">
         <Carousel />
       </section>
-      <div className="main_container">
+      <div className="mainContainer">
         <section className="filtre">FILTRE</section>
         <section className="card">
           {heroes

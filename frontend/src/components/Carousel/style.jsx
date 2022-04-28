@@ -5,7 +5,7 @@ export default styled.section`
   background-color: ${(props) => props.bg};
   height: 100%;
   display: flex;
-  .carousel-container {
+  .carouselContainer {
     display: flex;
     justify-content: space-around;
     margin: auto 0;

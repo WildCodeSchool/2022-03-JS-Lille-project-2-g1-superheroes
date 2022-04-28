@@ -4,7 +4,7 @@ import SFooter from "./style";
 function Footer() {
   return (
     <SFooter>
-      <div className="container-footer">
+      <div className="containerFooter">
         <p className="text">
           <Link to="/legalnotice">Legal Notice</Link>
         </p>

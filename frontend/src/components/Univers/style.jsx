@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.div`
   color: white;
-  .main_container {
+  .mainContainer {
     display: flex;
     justify-content: space-between;
     .filtreMobile {
@@ -22,7 +22,7 @@ export default styled.div`
       top: 2rem;
     }
   }
-  .header_container {
+  .headerContainer {
     display: flex;
     height: 60vh;
     .filtreMobile {
@@ -45,7 +45,7 @@ export default styled.div`
       text-align: justify;
     }
   }
-  .carousel_container {
+  .carouselContainer {
     padding: auto 0;
   }
   .card {
@@ -55,10 +55,10 @@ export default styled.div`
     margin: 1.5rem 2rem;
   }
   @media screen and (max-width: 768px) {
-    .carousel_container {
+    .carouselContainer {
       display: none;
     }
-    .header_container {
+    .headerContainer {
       display: initial;
       .image {
         width: 100vw;
@@ -86,7 +86,7 @@ export default styled.div`
         top: 2rem;
       }
     }
-    .main_container {
+    .mainContainer {
       .filtre {
         display: none;
       }
