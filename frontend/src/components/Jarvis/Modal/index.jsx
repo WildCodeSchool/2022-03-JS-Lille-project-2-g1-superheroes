@@ -8,18 +8,16 @@ function Modal({ open, onClose, children }) {
 
   return (
     <SJarvis>
-      <>
-        <div className="overlay" />
+       <div className="overlay" />
         <div className="modal">
           {children}
-          <div className="app">{}</div>
+          <div className="app"></div>
           <div className="border_button">
             <button onClick={onClose} type="button">
               Close card
             </button>
           </div>
         </div>
-      </>
     </SJarvis>
   );
 }

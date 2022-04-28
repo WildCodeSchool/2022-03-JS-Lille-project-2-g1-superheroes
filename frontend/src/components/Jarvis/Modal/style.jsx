@@ -8,7 +8,7 @@ export default styled.div`
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
+    z-index: 2;
   }
   .modal {
     position: fixed;
@@ -18,7 +18,7 @@ export default styled.div`
     background-color: #000000;
     width: 14.4rem;
     height: 17rem;
-    z-index: 1000;
+    z-index: 2;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     display: flex;
