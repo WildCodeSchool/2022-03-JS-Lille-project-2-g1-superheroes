@@ -8,7 +8,7 @@ export default styled.section`
     height: 100px;
     width: 100px;
     position: fixed;
-    bottom: 0;
+    bottom: 5vh;
     right: 0;
     :hover {
       .img1 {
