@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import marvel from "../../../assets/headerhomepage/marvel2.jpg";
-import starwars from "../../../assets/headerhomepage/starwars2.jpg";
-import manga from "../../../assets/headerhomepage/Manga.jpg";
+import marvel from "../../../assets/headerhomepage/marvel.jpg";
+import starwars from "../../../assets/headerhomepage/starwars.jpg";
+import manga from "../../../assets/headerhomepage/manga.jpg";
 import dccomics from "../../../assets/headerhomepage/dccomics.jpg";
 import autres from "../../../assets/headerhomepage/autres.jpg";
 

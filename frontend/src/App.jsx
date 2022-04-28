@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import SGlobal from "./style";
-import Footer from "./components/Footer/Footer";
 import LegalNotice from "./components/LegalNotice/LegalNotice";
+import Univers from "./components/Univers";
+
 
 function App() {
   return (
@@ -9,9 +10,9 @@ function App() {
     <SGlobal className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/:univers" element={<Univers />} />
         <Route path="/legalnotice" element={<LegalNotice />} />
       </Routes>
-      <Footer />
     </SGlobal>
   );
 }

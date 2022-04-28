@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.div`
-  .container-footer {
+  .containerFooter {
     display: flex;
     justify-content: center;
     background-color: #2c2c2c;
