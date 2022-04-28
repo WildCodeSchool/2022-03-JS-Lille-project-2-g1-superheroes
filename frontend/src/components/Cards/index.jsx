@@ -5,7 +5,6 @@ import SCard from "./Style";
 function Card({
   data: { name, id, images, powerstats, appearance, biography },
 }) {
-  
   const [src, setSrc] = useState("");
   useEffect(() => {
     setSrc(images.sm);
@@ -40,10 +39,10 @@ Card.propTypes = {
   data: PropTypes.shape({
     name: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
-    images: PropTypes.string.isRequired,
-    powerstats: PropTypes.number.isRequired,
-    appearance: PropTypes.string.isRequired,
-    biography: PropTypes.string.isRequired,
+    images: PropTypes.shape().isRequired,
+    powerstats: PropTypes.shape().isRequired,
+    appearance: PropTypes.shape().isRequired,
+    biography: PropTypes.shape().isRequired,
   }).isRequired,
 };
 

@@ -59,8 +59,8 @@ export default function Jarvis() {
         <img src={imgJarvis1} alt="jarvis1" className="img1" />
         <button
           type="button"
-          onFocus=""
           onMouseOver={() => toggleJarvis(false)}
+          onFocus={() => {}}
           onClick={() => {
             setIsOpen(true);
             search();
@@ -104,8 +104,12 @@ export default function Jarvis() {
                 })
                 .map((result) => {
                   return (
-                    <button type="button" onClick={() => onSearch(result.name)}>
-                      <li key={result.id}>{result.name}</li>
+                    <button
+                      key={result.id}
+                      type="button"
+                      onClick={() => onSearch(result.name)}
+                    >
+                      <li>{result.name}</li>
                     </button>
                   );
                 })}
