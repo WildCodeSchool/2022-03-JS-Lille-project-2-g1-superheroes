@@ -2,27 +2,26 @@ import styled from "styled-components";
 
 export default styled.section`
   /* Aspect du carousel */
-  background-color: #000000;
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-  .carousel-container {
+  background-color: ${(props) => props.bg};
+  height: 100%;
+  display: flex;
+  .carouselContainer {
     display: flex;
     justify-content: space-around;
+    margin: auto 0;
+    height: 40vh;
     img {
-      width: 20%;
-    }
-    img:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 5px 5px #fff;
+      padding: 2em 0;
+      width: 15%;
+      object-fit: cover;
     }
   }
 
   button {
     border: 0;
-    font-size: 5em;
+    font-size: 15em;
     cursor: pointer;
     color: white;
-    background-color: #000000;
+    background-color: transparent;
   }
 `;

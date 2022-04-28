@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.section`
   .card {
-    background-image: url(${(props) => props.src || null});
+    background-image: url(${(props) => props.src || ""});
     background-position: center;
     background-size: cover;
     width: 30vh;

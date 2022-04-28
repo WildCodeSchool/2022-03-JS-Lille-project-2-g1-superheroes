@@ -29,7 +29,7 @@ export default function HomePageHeader() {
               <img src={logodc} alt="logodc" />
             </li>
           </Link>
-          <Link to="/autresheros">
+          <Link to="/autres">
             <li className="autresheros">
               <span>Autres Héros</span>
             </li>

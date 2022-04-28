@@ -1,11 +1,18 @@
 import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 import SCard from "./Style";
 
 function Card({
   data: { name, id, images, powerstats, appearance, biography },
 }) {
+  
+  const [src, setSrc] = useState("");
+  useEffect(() => {
+    setSrc(images.sm);
+  }, []);
+
   return (
-    <SCard src={images.sm}>
+    <SCard src={src}>
       <div className="card">
         <h1>{name}</h1>
         <h2>{id}</h2>
