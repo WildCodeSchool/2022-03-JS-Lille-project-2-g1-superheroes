@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 import SCard from "./Style";
 
-function Card({ name, id, images, powerstats, appearance, biography }) {
+function Card({
+  data: { name, id, images, powerstats, appearance, biography },
+}) {
   return (
     <SCard src={images.sm}>
       <div className="card">
@@ -28,12 +30,14 @@ function Card({ name, id, images, powerstats, appearance, biography }) {
   );
 }
 Card.propTypes = {
-  name: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
-  images: PropTypes.string.isRequired,
-  powerstats: PropTypes.number.isRequired,
-  appearance: PropTypes.string.isRequired,
-  biography: PropTypes.string.isRequired,
+  data: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+    images: PropTypes.string.isRequired,
+    powerstats: PropTypes.number.isRequired,
+    appearance: PropTypes.string.isRequired,
+    biography: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Card;

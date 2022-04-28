@@ -1,5 +1,6 @@
 import SHomePage from "./style";
 import SHomePageHeader from "./HomePageHeader";
+import Jarvis from "../Jarvis";
 
 export default function HomePage() {
   return (
@@ -8,7 +9,7 @@ export default function HomePage() {
       <SHomePage>
         <article className="VS" />
         <article className="heros">Heros du jour</article>
-        <article className="jarvis">JARVIS</article>
+        <Jarvis />
       </SHomePage>
     </main>
   );

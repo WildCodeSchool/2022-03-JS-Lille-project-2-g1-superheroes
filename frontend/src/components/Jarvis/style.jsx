@@ -56,5 +56,33 @@ export default styled.section`
       font-size: 12px;
       text-align: center;
     }
+    .section-suggestions {
+      position: fixed;
+      margin-top: 1em;
+      margin-right: 240px;
+      background-color: #000000;
+      width: 9rem;
+      max-height: 150px;
+      border-top-left-radius: 1em;
+      border-bottom-left-radius: 1em;
+      overflow-y: auto;
+      overflow-x: hidden;
+      ul {
+        margin-left: 0.5em;
+        scrollbar-color: red;
+        button {
+          background-color: white;
+          opacity: 0.7;
+          margin: 2px;
+          font-size: 80%;
+          border-radius: 0.4rem;
+        }
+        li {
+          list-style-type: none;
+          color: #000000;
+          cursor: pointer;
+        }
+      }
+    }
   }
 `;
