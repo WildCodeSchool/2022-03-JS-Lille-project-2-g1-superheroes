@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export default styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -13vh;
   h3 {
     color: red;
     background-color: #d3e1d9;

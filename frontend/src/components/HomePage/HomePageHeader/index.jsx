@@ -3,6 +3,7 @@ import logomarvel from "../../../assets/logo/logomarvel.png";
 import logosw from "../../../assets/logo/logosw.png";
 import logodc from "../../../assets/logo/logodc.png";
 import SHomePageHeader from "./style";
+import Logo from "../../Logo";
 
 export default function HomePageHeader() {
   return (
@@ -36,6 +37,7 @@ export default function HomePageHeader() {
           </Link>
         </ul>
       </nav>
+      <Logo />
     </SHomePageHeader>
   );
 }
