@@ -26,7 +26,7 @@ export default styled.nav`
       background-position: center;
       border: solid 2px black;
       width: 18vw;
-      height: 70vh;
+      height: 59vh;
       filter: none;
     }
     li:hover {
@@ -65,13 +65,14 @@ export default styled.nav`
   }
 
   @media screen and (max-width: 768px) {
+    padding: 0;
     ul {
       flex-direction: column;
     }
     a li {
       border: solid 2px black;
-      width: 100vw;
-      height: 7rem;
+      width: 99vw;
+      height: 6rem;
       background-size: cover;
       background-repeat: no-repeat;
     }

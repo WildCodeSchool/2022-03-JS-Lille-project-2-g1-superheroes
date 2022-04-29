@@ -13,8 +13,8 @@ function Card({
   return (
     <SCard src={src}>
       <div className="card">
-        <h1>{name}</h1>
         <h2>{id}</h2>
+        <h1>{name}</h1>
         <section className="capacity">
           <ul className="namePower">
             <li className="strengh">strengh</li>

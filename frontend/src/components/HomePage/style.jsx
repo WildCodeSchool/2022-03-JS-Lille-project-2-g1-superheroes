@@ -7,6 +7,7 @@ export default styled.main`
   margin-bottom: 5vh;
   display: flex;
   justify-content: space-around;
+  margin-left: 13.7vw;
   article {
     width: 400px;
     height: 200px;
@@ -36,12 +37,14 @@ export default styled.main`
     cursor: pointer;
   }
   @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+    margin: 0;
     article {
       margin: 0;
       padding: 0;
       width: 30%;
       height: 10vh;
-      font-size: 24px;
+      font-size: 16px;
       color: white;
       text-align: center;
     }

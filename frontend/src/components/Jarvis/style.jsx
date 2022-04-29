@@ -8,7 +8,7 @@ export default styled.section`
     height: 100px;
     width: 100px;
     position: fixed;
-    bottom: 0;
+    bottom: 5vh;
     right: 0;
     :hover {
       .img1 {
@@ -83,6 +83,21 @@ export default styled.section`
           cursor: pointer;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .block .img1 {
+      margin-top: 2vh;
+      margin-left: -2vw;
+      left: 9px;
+    }
+    .block .img2 {
+      left: 9px;
+      top: 29px;
+    }
+    .jarvisNav {
+      margin-left: -1.8vw;
     }
   }
 `;

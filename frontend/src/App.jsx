@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "@components/HomePage";
 import SGlobal from "./style";
-import LegalNotice from "./components/LegalNotice/LegalNotice";
+import LegalNotice from "./components/LegalNotice";
 import Univers from "./components/Univers";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/:univers" element={<Univers />} />
         <Route path="/legalnotice" element={<LegalNotice />} />
       </Routes>
+      <Footer />
     </SGlobal>
   );
 }
