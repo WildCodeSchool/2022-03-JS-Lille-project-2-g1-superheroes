@@ -52,6 +52,7 @@ export default function Univers() {
                 publisher.toLowerCase().includes(dataUnivers[univers].categ)
               );
             })
+            .slice(0, 48)
             .map((hero) => {
               return <Card key={hero.id} data={hero} />;
             })}
