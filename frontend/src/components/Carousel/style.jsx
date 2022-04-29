@@ -10,6 +10,7 @@ export default styled.section`
     justify-content: space-around;
     margin: auto 0;
     height: 40vh;
+    width: 100vw;
     img {
       padding: 2em 0;
       width: 15%;
