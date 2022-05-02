@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Filtre from "../Filtre";
 import Carousel from "../Carousel";
 import SUniver from "./style";
 import Card from "../Cards";
@@ -31,7 +32,9 @@ export default function Univers() {
         <Carousel />
       </section>
       <div className="mainContainer">
-        <section className="filtre">FILTRE</section>
+        <section className="filtre">
+          <Filtre />
+        </section>
         <section className="card">
           {heroes
             .filter((hero) => {
