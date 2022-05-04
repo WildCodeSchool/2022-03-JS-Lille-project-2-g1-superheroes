@@ -32,10 +32,6 @@ export default styled.div`
       padding-right: 0.7rem;
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem;
-      button {
-        border: none;
-        background-color: white;
-      }
     }
   }
 `;
