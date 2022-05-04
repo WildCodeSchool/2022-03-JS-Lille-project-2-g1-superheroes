@@ -1,14 +1,17 @@
 import { createContext, useState } from "react";
 import PropTypes from "prop-types";
 
-const CurrentStatsContextP = createContext();
+const statsContext = createContext();
+export default statsContext;
 
-export function CurrentStatsContext({ children }) {
+export function StatsContext({ children }) {
   const [valueStrengh, setValueStrengh] = useState(0);
   const [valuePower, setValuePower] = useState(0);
   const [valueSpeed, setValueSpeed] = useState(0);
+  const [choiceRace, setChoiceRace] = useState(false);
+  const [races, setRaces] = useState([]);
   return (
-    <CurrentStatsContext.Provider
+    <statsContext.Provider
       // eslint-disable-next-line react/jsx-no-constructed-context-values
       value={{
         valueStrengh,
@@ -17,15 +20,17 @@ export function CurrentStatsContext({ children }) {
         setValuePower,
         valueSpeed,
         setValueSpeed,
+        choiceRace,
+        setChoiceRace,
+        races,
+        setRaces,
       }}
     >
       {children}
-    </CurrentStatsContext.Provider>
+    </statsContext.Provider>
   );
 }
 
-CurrentStatsContext.propTypes = {
+StatsContext.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export default CurrentStatsContextP;

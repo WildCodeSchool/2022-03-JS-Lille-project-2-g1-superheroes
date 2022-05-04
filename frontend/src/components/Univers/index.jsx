@@ -1,16 +1,18 @@
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
-import PropTypes from "prop-types";
+import statsContext from "@services/contexts/stats";
 import Filtre from "../Filtre";
 import Carousel from "../Carousel";
 import SUniver from "./style";
 import Card from "../Cards";
 import dataUnivers from "../UniversData/index";
 
-export default function Univers({ valueStrengh }) {
+export default function Univers() {
   const { univers } = useParams();
   const [heroes, setHeroes] = useState([]);
+  const { valueStrengh, valuePower, valueSpeed, choiceRace } =
+    useContext(statsContext);
 
   useEffect(() => {
     axios.get("http://localhost:5000/heroes").then(({ data }) => {
@@ -57,7 +59,15 @@ export default function Univers({ valueStrengh }) {
               );
             })
             .filter((hero) => {
-              return hero.powerstats.strength > valueStrengh;
+              if (choiceRace === false) {
+                return hero.appearance.race;
+              }
+              return (
+                hero.powerstats.strength >= valueStrengh &&
+                hero.powerstats.speed >= valueSpeed &&
+                hero.powerstats.power >= valuePower &&
+                hero.appearance.race === choiceRace
+              );
             })
             .slice(0, 48)
             .map((hero) => {
@@ -68,6 +78,3 @@ export default function Univers({ valueStrengh }) {
     </SUniver>
   );
 }
-Univers.propTypes = {
-  valueStrengh: PropTypes.number.isRequired,
-};
