@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Carousel from "../Carousel";
@@ -20,7 +20,13 @@ export default function Univers() {
     <SUniver bg={dataUnivers[univers].bg}>
       <div className="headerContainer">
         <div>
-          <img className="logo" src={dataUnivers[univers].logo} alt={univers} />
+          <Link to="/">
+            <img
+              className="logo"
+              src={dataUnivers[univers].logo}
+              alt={univers}
+            />
+          </Link>
           <p className="details">{dataUnivers[univers].details}</p>
           <section className="filtreMobile">FILTRE</section>
         </div>
