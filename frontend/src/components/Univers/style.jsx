@@ -54,7 +54,7 @@ export default styled.div`
     flex-wrap: wrap;
     margin: 1.5rem 2rem;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 428px) {
     .carouselContainer {
       display: none;
     }

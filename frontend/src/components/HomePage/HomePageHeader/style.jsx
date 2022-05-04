@@ -64,7 +64,7 @@ export default styled.nav`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 428px) {
     padding: 0;
     ul {
       flex-direction: column;
