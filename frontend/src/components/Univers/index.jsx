@@ -1,13 +1,14 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import PropTypes from "prop-types";
 import Filtre from "../Filtre";
 import Carousel from "../Carousel";
 import SUniver from "./style";
 import Card from "../Cards";
 import dataUnivers from "../UniversData/index";
 
-export default function Univers() {
+export default function Univers({ valueStrengh }) {
   const { univers } = useParams();
   const [heroes, setHeroes] = useState([]);
 
@@ -55,6 +56,9 @@ export default function Univers() {
                 publisher.toLowerCase().includes(dataUnivers[univers].categ)
               );
             })
+            .filter((hero) => {
+              return hero.powerstats.strength > valueStrengh;
+            })
             .slice(0, 48)
             .map((hero) => {
               return <Card key={hero.id} data={hero} />;
@@ -64,3 +68,6 @@ export default function Univers() {
     </SUniver>
   );
 }
+Univers.propTypes = {
+  valueStrengh: PropTypes.number.isRequired,
+};

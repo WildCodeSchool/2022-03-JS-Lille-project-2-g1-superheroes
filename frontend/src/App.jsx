@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import HomePage from "@components/HomePage";
+import HomePage from "./components/HomePage";
 import SGlobal from "./style";
 import LegalNotice from "./components/LegalNotice";
 import Univers from "./components/Univers";

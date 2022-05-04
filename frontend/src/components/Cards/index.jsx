@@ -22,7 +22,7 @@ function Card({
             <li className="speed">speed</li>
           </ul>
           <ul className="numbers">
-            <li className="pointStrengh">{powerstats.intelligence}</li>
+            <li className="pointStrengh">{powerstats.strength}</li>
             <li className="pointPower">{powerstats.power}</li>
             <li className="pointSpeed">{powerstats.speed}</li>
           </ul>
