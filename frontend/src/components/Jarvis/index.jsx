@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import SJarvis from "./style";
 import Modal from "./Modal";
-import Cards from "../Cards";
+import Card from "../Cards";
 
 export default function Jarvis() {
   const [active, setActive] = useState("jarvisNav");
@@ -52,7 +52,7 @@ export default function Jarvis() {
     <SJarvis>
       {popCard?.name && (
         <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-          <Cards data={popCard} />
+          <Card data={popCard} />
         </Modal>
       )}
       <div className="block">

@@ -13,23 +13,29 @@ function Card({
   return (
     <SCard src={src}>
       <div className="card">
-        <h2>{id}</h2>
-        <h1>{name}</h1>
-        <section className="capacity">
-          <ul className="namePower">
-            <li className="strengh">strengh</li>
-            <li className="power">power</li>
-            <li className="speed">speed</li>
-          </ul>
-          <ul className="numbers">
-            <li className="pointStrengh">{powerstats.intelligence}</li>
-            <li className="pointPower">{powerstats.power}</li>
-            <li className="pointSpeed">{powerstats.speed}</li>
-          </ul>
-        </section>
+        <div className="header-card">
+          <p className="id">{id}</p>
+          <p className="name">{name}</p>
+        </div>
+        <div className="capacity">
+          <div className="namePower">
+            <ul>
+              <li className="namepower">strengh</li>
+              <li className="namepower">power</li>
+              <li className="namepower">speed</li>
+            </ul>
+          </div>
+          <div className="point">
+            <ul>
+              <li className="pointIntelligence">{powerstats.intelligence}</li>
+              <li className="pointPower">{powerstats.power}</li>
+              <li className="pointSpeed">{powerstats.speed}</li>
+            </ul>
+          </div>
+        </div>
         <div className="identity">
-          <p> Full Name: {biography.fullName} </p>
-          <p>Race: {appearance.race}</p>
+          <p className="nameIdentity"> Full Name: {biography.fullName} </p>
+          <p className="nameIdentity">Race: {appearance.race}</p>
         </div>
       </div>
     </SCard>
