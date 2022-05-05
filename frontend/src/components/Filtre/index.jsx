@@ -60,8 +60,8 @@ function Filtre() {
       valueSpeed={valueSpeed}
     >
       <div>
-        <label htmlFor="strengh">
-          strengh
+        <label htmlFor="strengh" className="strengh">
+          Strength
           <input
             type="range"
             min="0"
@@ -74,8 +74,8 @@ function Filtre() {
           />
         </label>
 
-        <label htmlFor="power">
-          power
+        <label htmlFor="power" className="power">
+          Power
           <input
             type="range"
             min="0"
@@ -88,8 +88,8 @@ function Filtre() {
           />
         </label>
 
-        <label htmlFor="speed">
-          speed
+        <label htmlFor="speed" className="speed">
+          Speed
           <input
             type="range"
             min="0"
@@ -102,8 +102,7 @@ function Filtre() {
           />
         </label>
 
-        <label htmlFor="Race">
-          {" "}
+        <label htmlFor="Race" className="race">
           Race
           <select
             name="Race"
