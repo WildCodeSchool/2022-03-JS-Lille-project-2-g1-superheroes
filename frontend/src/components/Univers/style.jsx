@@ -41,8 +41,10 @@ export default styled.div`
       height: 100%;
     }
     .details {
+      height: 30vh;
       margin: 2em;
       text-align: justify;
+      overflow: scroll;
     }
   }
   .carouselContainer {
