@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import statsContext from "@services/contexts/stats";
+import statsContext from "../../services/contexts/stats";
 import SFiltre from "./style";
 import dataUnivers from "../UniversData/index";
 

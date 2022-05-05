@@ -7,8 +7,6 @@ export default function HomePage() {
     <main>
       <SHomePageHeader />
       <SHomePage>
-        <article className="VS" />
-        <article className="heros">Heros du jour</article>
         <Jarvis />
       </SHomePage>
     </main>

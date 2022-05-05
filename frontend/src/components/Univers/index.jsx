@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import statsContext from "../../services/contexts/stats";
 import Filtre from "../Filtre";
@@ -24,7 +24,13 @@ export default function Univers() {
     <SUniver bg={dataUnivers[univers].bg}>
       <div className="headerContainer">
         <div>
-          <img className="logo" src={dataUnivers[univers].logo} alt={univers} />
+          <Link to="/">
+            <img
+              className="logo"
+              src={dataUnivers[univers].logo}
+              alt={univers}
+            />
+          </Link>
           <p className="details">{dataUnivers[univers].details}</p>
           <section className="filtreMobile">
             <Filtre />
@@ -74,7 +80,8 @@ export default function Univers() {
                   hero.powerstats.power >= valuePower)
               );
             })
-            .slice(0, 48)
+
+            .slice(0, 24)
             .map((hero) => {
               return <Card key={hero.id} data={hero} />;
             })}

@@ -5,7 +5,7 @@ export default styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 46vh;
+  margin-top: 6vh;
   z-index: 1;
   h3 {
     color: red;
