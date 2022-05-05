@@ -68,10 +68,20 @@ export default function Univers() {
             })
             .filter((hero) => {
               if (choiceRace === "false") {
-                return hero.appearance.race;
+                return (
+                  hero.powerstats.strength >= valueStrengh &&
+                  hero.powerstats.speed >= valueSpeed &&
+                  hero.powerstats.power >= valuePower &&
+                  hero.appearance.race
+                );
               }
               if (choiceRace === false) {
-                return hero.appearance.race;
+                return (
+                  hero.powerstats.strength >= valueStrengh &&
+                  hero.powerstats.speed >= valueSpeed &&
+                  hero.powerstats.power >= valuePower &&
+                  hero.appearance.race
+                );
               }
 
               return (
