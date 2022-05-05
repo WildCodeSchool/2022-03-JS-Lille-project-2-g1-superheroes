@@ -18,7 +18,7 @@ function Card({
           <p className="name">{name}</p>
         </div>
         <div className="capacity">
-          <div className="namePower">
+          <div className="Power">
             <ul>
               <li className="namepower">strengh</li>
               <li className="namepower">power</li>

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Carousel from "../Carousel";
 import SUniver from "./style";
-import Card from "../Cards";
+import Card from "../Card";
 import dataUnivers from "../UniversData/index";
 
 export default function Univers() {

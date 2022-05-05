@@ -74,7 +74,7 @@ export default styled.div`
     margin-right: 6.6rem;
   }
 
-  .namePower ul {
+  .Power ul {
     position: absolute;
     width: 1.2rem;
   }

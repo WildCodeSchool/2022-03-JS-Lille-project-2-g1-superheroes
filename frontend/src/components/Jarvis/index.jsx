@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import SJarvis from "./style";
 import Modal from "./Modal";
-import Card from "../Cards";
+import Card from "../Card";
 
 export default function Jarvis() {
   const [active, setActive] = useState("jarvisNav");
