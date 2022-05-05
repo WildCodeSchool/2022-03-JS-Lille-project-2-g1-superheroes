@@ -20,6 +20,7 @@ export default styled.div`
       position: -webkit-sticky;
       position: sticky;
       top: 2rem;
+      width: 10rem;
     }
   }
   .headerContainer {
@@ -52,7 +53,7 @@ export default styled.div`
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    margin: 1.5rem 2rem;
+    margin: 1.5rem 1.5rem;
   }
   @media screen and (max-width: 768px) {
     .carouselContainer {

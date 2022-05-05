@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import axios from "axios";
-import statsContext from "@services/contexts/stats";
+import statsContext from "../../services/contexts/stats";
 import Filtre from "../Filtre";
 import Carousel from "../Carousel";
 import SUniver from "./style";
@@ -26,7 +26,9 @@ export default function Univers() {
         <div>
           <img className="logo" src={dataUnivers[univers].logo} alt={univers} />
           <p className="details">{dataUnivers[univers].details}</p>
-          <section className="filtreMobile">FILTRE</section>
+          <section className="filtreMobile">
+            <Filtre />
+          </section>
         </div>
         <img className="image" src={dataUnivers[univers].image} alt={univers} />
       </div>
@@ -63,10 +65,13 @@ export default function Univers() {
                 return hero.appearance.race;
               }
               return (
-                hero.powerstats.strength >= valueStrengh &&
-                hero.powerstats.speed >= valueSpeed &&
-                hero.powerstats.power >= valuePower &&
-                hero.appearance.race === choiceRace
+                (hero.powerstats.strength >= valueStrengh &&
+                  hero.powerstats.speed >= valueSpeed &&
+                  hero.powerstats.power >= valuePower &&
+                  hero.appearance.race === choiceRace) ||
+                (hero.powerstats.strength >= valueStrengh &&
+                  hero.powerstats.speed >= valueSpeed &&
+                  hero.powerstats.power >= valuePower)
               );
             })
             .slice(0, 48)
