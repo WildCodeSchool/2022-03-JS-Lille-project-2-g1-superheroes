@@ -8,6 +8,7 @@ function Modal({ open, onClose, children }) {
 
   return (
     <SJarvis>
+      {/* eslint-disable-next-line */}
       <div onClick={onClose} className="overlay" />
       <div className="modal">
         {children}

@@ -6,6 +6,7 @@ function Card({
   data: { name, id, images, powerstats, appearance, biography },
 }) {
   const [src, setSrc] = useState("");
+
   useEffect(() => {
     setSrc(images.sm);
   }, []);
@@ -27,7 +28,7 @@ function Card({
           </div>
           <div className="point">
             <ul>
-              <li className="pointIntelligence">{powerstats.intelligence}</li>
+              <li className="pointIntelligence">{powerstats.strength}</li>
               <li className="pointPower">{powerstats.power}</li>
               <li className="pointSpeed">{powerstats.speed}</li>
             </ul>
