@@ -21,8 +21,6 @@ function Filtre() {
     setRaces,
   } = useContext(statsContext);
 
-  // console.log(valueStrengh);
-
   useEffect(() => {
     axios.get("http://localhost:5000/heroes").then(({ data }) => {
       setHeroes(
@@ -50,7 +48,6 @@ function Filtre() {
 
   useEffect(() => {
     setRaces([...new Set(heroes.map((hero) => hero?.appearance?.race))]);
-    // console.log(heroes.map((hero) => hero?.appearance?.race));
   }, [heroes]);
 
   return (
