@@ -124,9 +124,9 @@ export default styled.div`
   .identity {
     color: black;
     align-self: flex-end;
-    margin-top: -2rem;
+    margin-top: -2.5rem;
     margin-bottom: 2rem;
-    margin-right: 2rem;
+    margin-left: 2rem;
     background-color: rgba(255, 255, 255, 0.5);
     border: 5px ridge #b6a87a;
     width: 12rem;

@@ -22,7 +22,7 @@ export default styled.section`
     border: 0;
     font-size: 15em;
     cursor: pointer;
-    color: white;
+    color: ${(props) => props.colorButton};
     background-color: transparent;
   }
 `;
