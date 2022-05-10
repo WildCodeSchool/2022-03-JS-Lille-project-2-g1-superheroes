@@ -21,7 +21,7 @@ export default styled.section`
   button {
     border: 0;
     font-size: 15em;
-    cursor: pointer;
+    cursor: ${(props) => props.cursorPointer};
     color: ${(props) => props.colorButton};
     background-color: transparent;
   }

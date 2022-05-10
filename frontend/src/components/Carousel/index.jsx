@@ -44,6 +44,7 @@ export default function Carousel() {
     <SCarousel
       bg={dataUnivers[univers].bg}
       colorButton={dataUnivers[univers].colorButton}
+      cursorPointer={dataUnivers[univers].cursorPointer}
     >
       <div className="carouselContainer">
         <button type="button" onClick={prevSlide}>
