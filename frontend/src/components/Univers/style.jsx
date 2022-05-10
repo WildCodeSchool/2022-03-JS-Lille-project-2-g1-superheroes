@@ -54,6 +54,7 @@ export default styled.div`
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
     margin: 1.5rem 2rem;
   }
   @media screen and (max-width: 768px) {
