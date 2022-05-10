@@ -40,7 +40,7 @@ export default function Univers() {
       </div>
 
       <section className="carouselContainer">
-        <Carousel />
+        <Carousel colorButton={dataUnivers[univers].colorButton} />
       </section>
       <div className="mainContainer">
         <section className="filtre">

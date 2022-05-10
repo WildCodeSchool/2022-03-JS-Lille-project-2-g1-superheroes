@@ -59,9 +59,9 @@ export default styled.section`
     .section-suggestions {
       position: fixed;
       margin-top: 1em;
-      margin-right: 240px;
+      margin-right: 324px;
       background-color: #000000;
-      width: 9rem;
+      width: 14rem;
       max-height: 150px;
       border-top-left-radius: 1em;
       border-bottom-left-radius: 1em;
@@ -74,7 +74,7 @@ export default styled.section`
           background-color: white;
           opacity: 0.7;
           margin: 2px;
-          font-size: 80%;
+          font-size: 100%;
           border-radius: 0.4rem;
         }
         li {
