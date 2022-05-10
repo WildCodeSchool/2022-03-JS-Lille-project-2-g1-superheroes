@@ -57,50 +57,66 @@ function Filtre() {
       valueSpeed={valueSpeed}
     >
       <div>
-        <label htmlFor="strengh" className="strengh">
-          Strength
-          <input
-            type="range"
-            min="0"
-            max="100"
-            step="10"
-            value={valueStrengh}
-            onChange={(e) => {
-              setValueStrengh(e.target.value);
-            }}
-          />
-        </label>
-
-        <label htmlFor="power" className="power">
-          Power
-          <input
-            type="range"
-            min="0"
-            max="100"
-            step="10"
-            value={valuePower}
-            onChange={(e) => {
-              setValuePower(e.target.value);
-            }}
-          />
-        </label>
-
-        <label htmlFor="speed" className="speed">
-          Speed
-          <input
-            type="range"
-            min="0"
-            max="100"
-            step="10"
-            value={valueSpeed}
-            onChange={(e) => {
-              setValueSpeed(e.target.value);
-            }}
-          />
-        </label>
+        <div className="aze">
+          <label htmlFor="strengh" className="strengh">
+            {" "}
+            Strength {valueStrengh}
+          </label>
+          <div className="test">
+            <span>0</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="10"
+              value={valueStrengh}
+              onChange={(e) => {
+                setValueStrengh(e.target.value);
+              }}
+            />
+            <span>100</span>
+          </div>
+        </div>
+        <div className="aze">
+          <label htmlFor="power" className="power">
+            Power {valuePower}
+          </label>
+          <div className="test">
+            <span>0</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="10"
+              value={valuePower}
+              onChange={(e) => {
+                setValuePower(e.target.value);
+              }}
+            />
+            <span>100</span>
+          </div>
+        </div>
+        <div className="aze">
+          <label htmlFor="speed" className="speed">
+            Speed {valueSpeed}
+          </label>
+          <div className="test">
+            <span>0</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="10"
+              value={valueSpeed}
+              onChange={(e) => {
+                setValueSpeed(e.target.value);
+              }}
+            />
+            <span>100</span>
+          </div>
+        </div>
 
         <label htmlFor="Race" className="race">
-          Race
           <select
             name="Race"
             label="text"

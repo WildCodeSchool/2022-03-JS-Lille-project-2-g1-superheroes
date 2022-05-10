@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
 export default styled.div`
-  label {
+  .aze {
+  }
+  .test {
+    display: flex;
+    padding-bottom: 4rem;
+    margin-left: -1rem;
+  }
+  .strength {
     display: flex;
     justify-content: center;
     margin: 4rem 0.3rem;
@@ -17,6 +24,10 @@ export default styled.div`
   @media screen and (max-width: 768px) {
     label {
       margin: 0.3rem;
+    }
+    .test {
+      padding: 0;
+      margin-left: 1.5rem;
     }
   }
 `;
