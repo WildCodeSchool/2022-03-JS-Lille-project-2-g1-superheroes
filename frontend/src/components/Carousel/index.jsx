@@ -11,22 +11,24 @@ export default function Carousel() {
   useEffect(() => {
     axios.get("http://localhost:5000/heroes").then(({ data }) => {
       setImages(
-        data.filter(({ biography }) => {
-          const { publisher } = biography;
-          const categA = [
-            "Marvel Comics",
-            "DC Comics",
-            "George Lucas",
-            "Shueisha",
-          ];
-          if (dataUnivers[univers].categ === "autre") {
-            return !categA.some((cat) => {
-              return publisher === cat;
-            });
-          }
+        data
+          .filter(({ biography }) => {
+            const { publisher } = biography;
+            const categA = [
+              "Marvel Comics",
+              "DC Comics",
+              "George Lucas",
+              "Shueisha",
+            ];
+            if (dataUnivers[univers].categ === "autre") {
+              return !categA.some((cat) => {
+                return publisher === cat;
+              });
+            }
 
-          return publisher === dataUnivers[univers].categ;
-        })
+            return publisher === dataUnivers[univers].categ;
+          })
+          .slice(0, 24)
       );
     });
   }, []);
@@ -39,7 +41,11 @@ export default function Carousel() {
     setPosition(position + 1);
   };
   return (
-    <SCarousel bg={dataUnivers[univers].bg}>
+    <SCarousel
+      bg={dataUnivers[univers].bg}
+      colorButton={dataUnivers[univers].colorButton}
+      cursorPointer={dataUnivers[univers].cursorPointer}
+    >
       <div className="carouselContainer">
         <button type="button" onClick={prevSlide}>
           &lsaquo;

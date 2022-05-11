@@ -8,6 +8,9 @@ function Footer() {
         <p className="text">
           <Link to="/legalnotice">Legal Notice</Link>
         </p>
+        <p>
+          <Link to="/">Home Page</Link>
+        </p>
       </div>
     </SFooter>
   );

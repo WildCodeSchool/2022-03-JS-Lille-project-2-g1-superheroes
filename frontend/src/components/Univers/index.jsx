@@ -1,14 +1,18 @@
-import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
+import statsContext from "../../services/contexts/stats";
+import Filtre from "../Filtre";
 import Carousel from "../Carousel";
 import SUniver from "./style";
-import Card from "../Cards";
+import Card from "../Card";
 import dataUnivers from "../UniversData/index";
 
 export default function Univers() {
   const { univers } = useParams();
   const [heroes, setHeroes] = useState([]);
+  const { valueStrengh, valuePower, valueSpeed, choiceRace } =
+    useContext(statsContext);
 
   useEffect(() => {
     axios.get("http://localhost:5000/heroes").then(({ data }) => {
@@ -20,18 +24,28 @@ export default function Univers() {
     <SUniver bg={dataUnivers[univers].bg}>
       <div className="headerContainer">
         <div>
-          <img className="logo" src={dataUnivers[univers].logo} alt={univers} />
+          <Link to="/">
+            <img
+              className="logo"
+              src={dataUnivers[univers].logo}
+              alt={univers}
+            />
+          </Link>
           <p className="details">{dataUnivers[univers].details}</p>
-          <section className="filtreMobile">FILTRE</section>
+          <section className="filtreMobile">
+            <Filtre />
+          </section>
         </div>
         <img className="image" src={dataUnivers[univers].image} alt={univers} />
       </div>
 
       <section className="carouselContainer">
-        <Carousel />
+        <Carousel colorButton={dataUnivers[univers].colorButton} />
       </section>
       <div className="mainContainer">
-        <section className="filtre">FILTRE</section>
+        <section className="filtre">
+          <Filtre />
+        </section>
         <section className="card">
           {heroes
             .filter((hero) => {
@@ -52,7 +66,25 @@ export default function Univers() {
                 publisher.toLowerCase().includes(dataUnivers[univers].categ)
               );
             })
-            .slice(0, 48)
+            .filter((hero) => {
+              if (choiceRace === "false" || choiceRace === false) {
+                return (
+                  hero.powerstats.strength >= valueStrengh &&
+                  hero.powerstats.speed >= valueSpeed &&
+                  hero.powerstats.power >= valuePower &&
+                  hero.appearance.race
+                );
+              }
+
+              return (
+                hero.powerstats.strength >= valueStrengh &&
+                hero.powerstats.speed >= valueSpeed &&
+                hero.powerstats.power >= valuePower &&
+                hero.appearance.race === choiceRace
+              );
+            })
+
+            .slice(0, 24)
             .map((hero) => {
               return <Card key={hero.id} data={hero} />;
             })}
