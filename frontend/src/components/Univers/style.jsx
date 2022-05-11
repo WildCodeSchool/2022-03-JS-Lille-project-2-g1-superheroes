@@ -15,11 +15,12 @@ export default styled.div`
       padding: 2rem 4rem;
       color: white;
       text-align: center;
-      font-size: 2rem;
+      font-size: 1rem;
       border: black solid 2px;
       position: -webkit-sticky;
       position: sticky;
       top: 2rem;
+      width: 10rem;
     }
   }
   .headerContainer {
@@ -77,12 +78,11 @@ export default styled.div`
       .filtreMobile {
         display: block;
         background: ${(props) => props.bg};
-        height: 5rem;
-        margin: 2rem;
-        padding: 2rem 4rem;
+        height: 8rem;
+        margin: 1rem;
+        padding: 0.5rem 4rem;
         color: white;
         text-align: center;
-        font-size: 2rem;
         border: black solid 2px;
         position: -webkit-sticky;
         position: sticky;
