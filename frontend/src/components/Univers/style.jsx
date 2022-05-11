@@ -5,6 +5,7 @@ export default styled.div`
   .mainContainer {
     display: flex;
     justify-content: space-between;
+    justify-content: flex-start;
     .filtreMobile {
       display: none;
     }
